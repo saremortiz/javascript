@@ -1,23 +1,49 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<-- Sarem Ortiz
-	Web programming 
-	test.html
-	8/27/2025-->
-	<head>
-		<title>My First Page</title>
-	</head>
-	
-	<body>
-		<h1>Hello World!</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Home Page</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script>
+		alert("Welcome!");
+	</script>
+	<script>
+	var guest = prompt("Welcome! This is my Home page. Please enter your name.");
+	document.write("<h2>Welcome! " + guest + "!</h2>");
+	</script>
+  </head>
+  <body>
+  <!-- style comments, this can have a stick value deep blue with white contrast--> 
+	<div class="opening">
+		<header>
+			<h1>My Home page</h1>
+		</header>
 		<nav>
-			<a href="">Lab 1</a> |
-			<a href="">Lab 2</a> |
-			<a href="">Lab 3</a>
+			<a href="index.html">Home</a> | <a href="about.html">About</a>
 		</nav>
-		<p>This is my test page.</p>
-		<p>I'm using it to test my uploads.</p>
-		<p> My name is Sarem Ortiz, female and 22 years old. Im taking this class to gain more knowledge in web programming.</p>
-		<p>I hope to maximize my skills and someday be able to learn more complicated concepts like machine learning</p>
-	</body>
+	</div>
+	<div class="content">
+	<!-- The intro in one side, image on the other-->
+		<div class="Intro">
+			<h2>Introduction</h2>
+			<h4>Hello! Welcome to my home page. <br> This website is created by <span style="color: #007bff;"> Sarem Ortiz</span>. Im a 22 year old programming student,<br> trying to make the digital wolrd a better envioroment.</h4>
+		</div>
+		<aside>
+			<img src="images/image1.jpg" alt="digital city" width="400" height="400">
+		</aside>
+		<div class="main">
+			<h2>Proffesional goals</h2>
+			<p>My main goal is to improve my coding skills and see what I can create proffesional and creative wise. </p>
+			<p>I hope to learn machine larning and understand more of how our technology is improving</p>
+			<p>Be a good assets to any company and team</p>
+			<p>Im hoping to continue this path and get a higher degree</p>
+			<p>Work towards getting a intership and experience</p>
+		</div>
+		<!-- same styling as header-->
+		<footer>
+			<p>thank you for your time</p>
+			<p>please visit <a href="https://www.linkedin.com/in/sam-conortiz-225955308/">this page</a> for more info</p>
+		</footer>
+	</div>
+  </body>
 </html>

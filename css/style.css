@@ -1,0 +1,112 @@
+/* ----general */
+*{
+	box-sizing: border-box
+}
+
+body {
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	background: #f6fbff;
+	color: #032046;
+	line-height: 1.6;
+}
+/* ---- Header */
+.opening {
+	background: linear-gradient(0deg, #021f4a, #0b3d91);
+	color: #e8f2ff;
+	padding: 1.5rem;
+	text-align: center;
+}
+
+.opening h1{
+	margin: 0.2em 0;
+	color: #ffffff;
+}
+.opening nav a {
+	color: #c7d8ff;
+	margin: 0 0.75em;
+}
+.opening nav a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+/* ---- content*/
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 2rem;
+  
+  background: linear-gradient(180deg, #ffffff, #e8f2ff);
+  margin-bottom: 4em;
+}
+
+aside {
+  flex: 0 200px 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside img {
+  max-width: 200%;
+  height: 120%;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.main {
+  margin-top: 3em;
+  min-width: 280px;
+  background: linear-gradient(135deg, #021f4a, #0b3d91);
+  color: #f6fbff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+.main h2 {
+  margin-top: 0;
+}
+
+footer {
+  flex: 1 1 100%;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #0b3d91;
+  color: white;
+  border-radius: 20px;
+}
+footer a {
+  color: #63a4ff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
