@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Quotes</title>
+	<link rel="stylesheet" href="css/stylequotes.css"/>
+	<script>
+		// Create an array with 5 quotes of the day
+		var qoutesOfDay = ["Don't follow your dreams, just ask where they are.", "A day without sunshine is like, you know, night.", "Never put off till tomorrow what you can do the day after tomorrow", "Everyday might not be good, but at least each one comes with snacks somewhere", "And dont forget that, mondays are proof that calendars have a dark sense of humor"];
+	</script>
+	<script>
+	//Prompt the user to enter a number.
+	var guest = prompt("Welcome! Please enter a number: ");
+	/* Take the user provided number, divide the number by 5 and get the remainder (modulus). Use the remainder as the array index and write that quote to the page. */
+	var indexNumber = Number(guest) % 5 
+	// It is written under the intro 
+	</script>
+  </head>
+  <body>
+  <!-- style comments, this can have a stick value deep blue with white contrast--> 
+	<div class="opening">
+		<header>
+			<h1>Random Fun Quotes:)</h1>
+		</header>
+		<nav>
+			<a href="index.html">Home</a> | <a href="quotes.html">Qoutes</a>
+		</nav>
+	</div>
+		<div id="content">
+		<script>
+		document.write("<h1 id ='content'>" + qoutesOfDay[indexNumber] + "</h1>");
+		</script>
+		</div>
+		<div class="Intro">
+			<h2>Fun websites:)</h2>
+			<script>
+		/* Create an array of 3 favorite website URLs and write them out on the web page as working links */
+		var websitesUrl = [ '<a href="https://cat-bounce.com/" target="_blank">catbounce</a>','<a href="https://zzz.zoomquilt.org/" target="_blank">zoomquilt</a>', '<a href="https://theuselessweb.com/">usseles website</a>'];
+		/* Prompt the user to enter their favorite website. Add it as the last item in the favorite websites array */
+		document.write(websitesUrl.join("<br>" ));
+		var userWebsite = prompt( "Please enter your favorite website ");
+		websitesUrl.push(userWebsite);
+		//Delete the first website from the array.
+		websitesUrl.shift();
+		</script>
+	<script>
+		// Write out the new list of links to the page from the revised array document.write("<br>" + websitesUrl[0] + "<br>" + websitesUrl[1] + "<br>");
+		document.write("<br>" + websitesUrl[0] + "<br>" + websitesUrl[1] + "<br><a href='" + websitesUrl[2] + "' target='_blank'>" + websitesUrl[2] + "</a>" );
+	</script>
+		<footer>
+		</footer>
+	</div>
+  </body>
+</html>
