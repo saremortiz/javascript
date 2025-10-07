@@ -1,0 +1,196 @@
+/* ----general
+#f6fbff = light blue 
+#032046 = dark blue
+#CCDDEE = lilac blue
+#e8f2ff = almost white
+#ffffff = white
+#DDEEFF = baby blue
+#0b3d91 = dark navy blue
+#021f4a = ver dark blue 
+#f6fbff = white ??
+rgba(0,0,0,0.12) idk transparent 
+#ffd700 - bright yellow
+
+*/
+
+body {
+	background: linear-gradient(to bottom, #021f4a, #CCDDEE);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+
+.rounded {
+	border-radius: 20px;
+}
+
+header {
+	font-family: system-ui, sans-serif;
+	text-align: center;
+	background-color: #CCDDEE;
+	padding:30px;
+}
+
+header h1 {
+	margin: 0.2em 0;
+	color: #021f4a;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header, nav, main {
+	border: 5px solid rgba(0,0,0,0.12);
+	overflow: visible;
+}
+
+nav {
+	text-align: center;
+	background-color: #DDEEFF;
+	padding: 30px;
+	margin-top:20px;
+}
+nav a {
+	margin: 25px;
+	color: #0b3d91;
+	margin: 0 0.75em;
+}
+nav a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+main {
+	background-color: #CCDDEE;
+	padding: 20px;
+	margin-top:20px;
+}
+section {
+	background: linear-gradient(to bottom right, #FFFF99, #f7dc6f,  goldenrod);
+	padding: 10px 20px;
+	margin-top: 20px;
+	box-shadow: 5px 5px 5px #555;
+}
+/*
+#f6fbff = light blue 
+#032046 = dark blue
+#CCDDEE = lilac blue
+#e8f2ff = almost white
+#ffffff = white
+#DDEEFF = baby blue
+#0b3d91 = dark navy blue
+#021f4a = ver dark blue 
+#f6fbff = white ??
+rgba(0,0,0,0.12) idk transparent 
+#ffd700 - bright yellow
+*/
+
+section h2{
+  margin-top: 0;
+  font-size: 48px;
+  font-weight: bold;
+   color: #0b3d91;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(to bottom, #DDEEFF, #032046, #021f4a );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s infinite;
+  
+}
+	
+section p {
+	 margin-top: 0;
+  font-size: 25px;
+  font-weight: bold;
+   color: #0b3d91;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+}
+@keyframes glow {	
+	0% {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+     }
+	 0% {
+	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+	 }
+	 50% {
+		 text-shadow: 2px 2px 8px rgba(137, 207, 240, 0.8);
+	 }
+	 100%{
+		 text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+	 }
+}
+
+section p {
+	font-style: italic;
+}
+
+#wrapper {
+	width: 90%;
+	margin: 30px auto;
+}
+footer{
+	text-align: center;
+	padding: 30px;
+	font-family: Courier New, Courier, monospace;
+}
+
+
+
+.star {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+  );
+  background-color: #f7dc6f;
+  box-shadow: 0px 0px 25px #ffd700dd;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: -1;
+  animation: twinkle 2s infinite alternate ease-in-out, drift 12s linear infinite, spin 20s linear infinite;
+}
+
+ Spread stars across TOP + SIDES 
+.star:nth-child(1) { top: -5%; left: 5%; animation-duration: 14s; }
+.star:nth-child(2) { top: -8%; left: 20%; animation-duration: 16s; }
+.star:nth-child(3) { top: -10%; left: 40%; animation-duration: 13s; }
+.star:nth-child(4) { top: -6%; left: 60%; animation-duration: 15s; }
+.star:nth-child(5) { top: -12%; left: 80%; animation-duration: 17s; }
+.star:nth-child(6) { top: -15%; right: 95%; animation-duration: 18s; }
+
+ Left side 
+.star:nth-child(7) { top: 10%; left: -5%; animation-duration: 14s; }
+.star:nth-child(8) { top: 30%; left: -8%; animation-duration: 16s; }
+
+ Right side 
+.star:nth-child(9) { top: 20%; left: 102%; animation-duration: 15s; }
+.star:nth-child(10) { top: 50%; left: 105%; animation-duration: 17s; }
+
+/* Random mid area */
+.star:nth-child(11) { top: -5%; left: 50%; animation-duration: 12s; }
+.star:nth-child(12) { top: -9%; left: 30%; animation-duration: 13s; }
+
+/* Glow flicker */
+@keyframes twinkle {
+  from { opacity: 0.6; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1.3); }
+}
+
+/* Drift & LOOP */
+@keyframes drift {
+  from { transform: translateY(0); }
+  to { transform: translateY(110vh); }
+}
+
+}
