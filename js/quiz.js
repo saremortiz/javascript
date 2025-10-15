@@ -23,7 +23,7 @@ function triviaQuiz() {
         attempts = 0;
       } else {
         // if answer doesn't match, alert user and subtract 1 from attempts
-        alert("Incorrect");
+        alert("Incorrect, you have" + attempts + "attempts");
         attempts = attempts - 1;
       } 
     } 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport"content="width=device-width, initial-scale=1">
+			<title>Trivia Quiz</title>
+			<link rel="stylesheet" href="css/stylequiz.css"/>
+			
+		</head>
+		<body> 
+			<div id="wrapper">
+				<header class = "rounded">
+					<h1>Trivia Quiz</h1>
+				</header>
+				<nav class = "rounded">
+					<a href="index.html">Home</a> | <a href="quotes.html">quotes</a> | <a href="index.html">Secret</a>
+				</nav>
+				<main class = "rounded">
+					
+					<section class = "rounded">
+					<script src="js/trivia.js"></script>
+					</section>
+					<script>
+						quote();
+					</script>
+					<section class = "rounded">
+					<script>
+						toGetEmail();
+						
+					</script>
+					</section>
+					<section  class = "rounded">
+						<script>
+						// call Quiz function
+							var score = triviaQuiz();
+							// display the results on the screen
+								document.write("<p>Your score is " + score+ "</p>");
+							var percentage = Number((score/9*100).toFixed(2));
+							document.write("<p> Your percetage is " + percentage + "</p>");
+					</script>
+					</section>
+				</main>
+				
+				<footer>
+				<script>
+						document.write("<p>Today is " + days[date.getDay()] + " " + numberday + " in " + months[date.getMonth()] + ".</p>");
+						document.write( "<p>" + timemin + "</p>");
+					</script>
+					<p>thank you for your time</p>
+				</footer>
+		</div>
+		
+		</body>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+</html>
+<!-- <script>
+						var secretNumber= 3
+						var points = 0
+						var guess = prompt("Please enter your favorite number: ");
+						guess = parseInt(guess); //this will turn into into an int 
+						while(isNaN(guess)){
+							guess = prompt("That's not a number! What's your favorite number? ");
+						    guess = parseInt(guess);
+						}
+						if (guess == 3) {
+								document.write("<p>For winning! You earned 10 points!</p>");
+							} else {
+								document.write("<p>For trying! You earned 0 points.</p>");
+						}
+				
+					</script>
+					-->
