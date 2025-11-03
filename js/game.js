@@ -26,7 +26,7 @@ var promptDiv = document.getElementById('prompt');
 function playGame() {
 	counter = 0
 	
-	if (counter < 1) {
+	if (counter < 2) {
 	
 	
 		var questionNumber = questions.shift();
